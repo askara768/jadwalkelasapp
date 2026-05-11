@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:jadwalkelasapp/lovely_splash_screen.dart';
+import 'package:jadwalkelasapp/pages/lovely_splash_screen.dart';
 
 void main() {
   runApp(Main());
@@ -16,6 +15,9 @@ class Main extends StatefulWidget {
 class _MainState extends State<Main> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: LovelySplashScreen(),);
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: LovelySplashScreen(),
+    );
   }
 }

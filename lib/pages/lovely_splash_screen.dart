@@ -1,7 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:jadwalkelasapp/auth/rahman_login_screen.dart';
+
+import 'auth/rahman_login_screen.dart';
 
 class LovelySplashScreen extends StatefulWidget {
   const LovelySplashScreen({super.key});
