@@ -11,8 +11,10 @@ class LovelyRegisterScreen extends StatefulWidget {
 class _LovelyRegisterScreenState extends State<LovelyRegisterScreen> {
   TextEditingController _nickname = TextEditingController();
   TextEditingController _username = TextEditingController();
-  TextEditingController _password = TextEditingController();
-  TextEditingController _confirmPassword = TextEditingController();
+  TextEditingController _password = TextEditingController(text: "pwpwpwpw");
+  TextEditingController _confirmPassword = TextEditingController(
+    text: "pwpwpwpw",
+  );
   bool showDafPW = true;
   bool showDafCPW = true;
 
