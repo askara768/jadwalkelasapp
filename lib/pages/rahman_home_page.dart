@@ -1,4 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:jadwalkelasapp/pages/lovely_xdkv.dart';
+import 'package:jadwalkelasapp/pages/lovely_xkpr.dart';
+import 'package:jadwalkelasapp/pages/lovely_xtsm.dart';
+import 'package:jadwalkelasapp/pages/rahman_xrpl.dart';
+import 'package:jadwalkelasapp/pages/rahman_xtkj.dart';
+import 'package:jadwalkelasapp/pages/rahman_xtkr.dart';
+import 'package:jadwalkelasapp/rahman_dpib.dart';
+import 'package:jadwalkelasapp/rahman_sija.dart';
 
 class RahmanHomePage extends StatefulWidget {
   const RahmanHomePage({super.key});
@@ -30,7 +38,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
           children: [
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RahmanXtkr()),
+                );
+              },
               child: Container(
                 padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
                 height: 80,
@@ -52,7 +65,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RahmanXrpl()),
+                );
+              },
               child: Container(
                 padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
                 height: 80,
@@ -74,7 +92,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RahmanXtkj()),
+                );
+              },
               child: Container(
                 padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
                 height: 80,
@@ -96,7 +119,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LovelyXtsm()),
+                );
+              },
               child: Container(
                 padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
                 height: 80,
@@ -118,7 +146,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LovelyXkpr()),
+                );
+              },
               child: Container(
                 padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
                 height: 80,
@@ -162,7 +195,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LovelyXdkv()),
+                );
+              },
               child: Container(
                 padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
                 height: 80,
@@ -184,7 +222,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RahmanSija()),
+                );
+              },
               child: Container(
                 padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
                 height: 80,
@@ -206,7 +249,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RahmanDpib()),
+                );
+              },
               child: Container(
                 padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
                 height: 80,
