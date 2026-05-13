@@ -99,7 +99,7 @@ class _RahmanLoginScreenState extends State<RahmanLoginScreen> {
                   },
                   child: Text(
                     'Daftar',
-                    style: TextStyle(fontSize: 50, color: Colors.white),
+                    style: TextStyle(fontSize: 25, color: Colors.white),
                   ),
                 ),
                 ElevatedButton(
@@ -127,7 +127,7 @@ class _RahmanLoginScreenState extends State<RahmanLoginScreen> {
                   },
                   child: Text(
                     'Login',
-                    style: TextStyle(fontSize: 50, color: Colors.white),
+                    style: TextStyle(fontSize: 25, color: Colors.white),
                   ),
                 ),
               ],
