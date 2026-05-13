@@ -48,7 +48,7 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
               ),
             ),
           ),
-          SizedBox(height: 20,),
+          SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {},
             child: Container(
@@ -65,12 +65,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
                 children: [
                   Image.asset(""),
                   SizedBox(width: 13),
-                  Text('X RPL 2'),
+                  Text('X TKJ 1'),
                 ],
               ),
             ),
           ),
-          SizedBox(height: 20,),
+          SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {},
             child: Container(
@@ -87,28 +87,7 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
                 children: [
                   Image.asset(""),
                   SizedBox(width: 13),
-                  Text('X RPL 2'),
-                ],
-              ),
-            ),
-          ),
-          ElevatedButton(
-            onPressed: () {},
-            child: Container(
-              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-              height: 80,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                border: Border.all(color: Colors.grey),
-                borderRadius: BorderRadius.circular(5),
-              ),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Image.asset(""),
-                  SizedBox(width: 13),
-                  Text('X RPL 2'),
+                  Text('X TKJ 2'),
                 ],
               ),
             ),
@@ -129,7 +108,28 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
                 children: [
                   Image.asset(""),
                   SizedBox(width: 13),
-                  Text('X RPL 2'),
+                  Text('X TKJ 3'),
+                ],
+              ),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            child: Container(
+              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+              height: 80,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Image.asset(""),
+                  SizedBox(width: 13),
+                  Text('X TKJ 4'),
                 ],
               ),
             ),

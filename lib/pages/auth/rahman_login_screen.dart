@@ -29,8 +29,8 @@ class _RahmanLoginScreenState extends State<RahmanLoginScreen> {
           children: [
             Column(
               children: [
-                Text('LockApp', style: TextStyle(fontSize: 50)),
-                Text('Login', style: TextStyle(fontSize: 30)),
+                Text('Jadwal Kelas', style: TextStyle(fontSize: 50)),
+                Text('Login', style: TextStyle(fontSize: 25)),
                 SizedBox(height: 50),
                 TextField(
                   controller: _username,
