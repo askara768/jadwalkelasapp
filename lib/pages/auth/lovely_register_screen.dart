@@ -29,8 +29,8 @@ class _LovelyRegisterScreenState extends State<LovelyRegisterScreen> {
           children: [
             Column(
               children: [
-                Text('LockApp', style: TextStyle(fontSize: 50)),
-                Text('Daftar', style: TextStyle(fontSize: 30)),
+                Text('Jadwal Kelas', style: TextStyle(fontSize: 50)),
+                Text('Daftar', style: TextStyle(fontSize: 25)),
                 SizedBox(height: 50),
                 TextField(
                   controller: _nickname,
@@ -148,7 +148,7 @@ class _LovelyRegisterScreenState extends State<LovelyRegisterScreen> {
                   },
                   child: Text(
                     'Batal',
-                    style: TextStyle(fontSize: 50, color: Colors.white),
+                    style: TextStyle(fontSize: 25, color: Colors.white),
                   ),
                 ),
                 ElevatedButton(
@@ -176,7 +176,7 @@ class _LovelyRegisterScreenState extends State<LovelyRegisterScreen> {
                   },
                   child: Text(
                     'Confirm',
-                    style: TextStyle(fontSize: 50, color: Colors.white),
+                    style: TextStyle(fontSize: 25, color: Colors.white),
                   ),
                 ),
               ],
