@@ -9,7 +9,7 @@ class LovelyRegisterScreen extends StatefulWidget {
 }
 
 class _LovelyRegisterScreenState extends State<LovelyRegisterScreen> {
-  TextEditingController _nickname = TextEditingController();
+  final TextEditingController _nickname = TextEditingController();
   TextEditingController _username = TextEditingController();
   TextEditingController _password = TextEditingController(text: "pwpwpwpw");
   TextEditingController _confirmPassword = TextEditingController(
