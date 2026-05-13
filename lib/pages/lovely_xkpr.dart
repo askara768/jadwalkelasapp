@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Lovely Xkpr extends StatefulWidget {
-  const Lovely Xkpr({super.key});
+class LovelyXkpr extends StatefulWidget {
+  const LovelyXkpr({super.key});
 
   @override
-  State<Lovely Xkpr> createState() => _Lovely XkprState();
+  State<LovelyXkpr> createState() => _LovelyXkprState();
 }
 
-class _Lovely XkprState extends State<Lovely Xkpr> {
+class _LovelyXkprState extends State<LovelyXkpr> {
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
