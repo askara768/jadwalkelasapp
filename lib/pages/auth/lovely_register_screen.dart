@@ -11,8 +11,8 @@ class LovelyRegisterScreen extends StatefulWidget {
 class _LovelyRegisterScreenState extends State<LovelyRegisterScreen> {
   TextEditingController _nickname = TextEditingController();
   TextEditingController _username = TextEditingController();
-  TextEditingController _password = TextEditingController();
-  TextEditingController _confirmPassword = TextEditingController();
+  TextEditingController _password = TextEditingController(text: "ayam");
+  TextEditingController _confirmPassword = TextEditingController(text: "ayam");
   bool showDafPW = true;
   bool showDafCPW = true;
 
@@ -29,14 +29,14 @@ class _LovelyRegisterScreenState extends State<LovelyRegisterScreen> {
           children: [
             Column(
               children: [
-                Text('LockApp', style: TextStyle(fontSize: 50)),
+                Text('Jadwal Kelas', style: TextStyle(fontSize: 50)),
                 Text('Daftar', style: TextStyle(fontSize: 30)),
                 SizedBox(height: 50),
                 TextField(
                   controller: _nickname,
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
-                    hintText: 'Tulis Nickname',
+                    hintText: 'Tulis Nickname Kamu',
                     label: Text('Nickname'),
                     fillColor: Colors.grey,
                     filled: true,
@@ -54,7 +54,7 @@ class _LovelyRegisterScreenState extends State<LovelyRegisterScreen> {
                   controller: _username,
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
-                    hintText: 'Tulis Username',
+                    hintText: 'Tulis Username Kamu',
                     label: Text('Username'),
                     fillColor: Colors.grey,
                     filled: true,
@@ -148,7 +148,7 @@ class _LovelyRegisterScreenState extends State<LovelyRegisterScreen> {
                   },
                   child: Text(
                     'Batal',
-                    style: TextStyle(fontSize: 50, color: Colors.white),
+                    style: TextStyle(fontSize: 25, color: Colors.white),
                   ),
                 ),
                 ElevatedButton(
@@ -160,7 +160,7 @@ class _LovelyRegisterScreenState extends State<LovelyRegisterScreen> {
                       showDialog(
                         context: context,
                         builder: (context) => AlertDialog(
-                          title: Text('Pendaftaran Berhasil'),
+                          title: Text(''),
                           backgroundColor: Colors.green,
                         ),
                       );
@@ -176,7 +176,7 @@ class _LovelyRegisterScreenState extends State<LovelyRegisterScreen> {
                   },
                   child: Text(
                     'Confirm',
-                    style: TextStyle(fontSize: 50, color: Colors.white),
+                    style: TextStyle(fontSize: 25, color: Colors.white),
                   ),
                 ),
               ],
