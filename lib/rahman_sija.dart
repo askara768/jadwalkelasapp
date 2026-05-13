@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class RahmanXrpl extends StatefulWidget {
-  const RahmanXrpl({super.key});
+class RahmanSija extends StatefulWidget {
+  const RahmanSija({super.key});
 
   @override
-  State<RahmanXrpl> createState() => _RahmanXrplState();
+  State<RahmanSija> createState() => _RahmanSijaState();
 }
 
-class _RahmanXrplState extends State<RahmanXrpl> {
+class _RahmanSijaState extends State<RahmanSija> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +22,7 @@ class _RahmanXrplState extends State<RahmanXrpl> {
             ),
           ),
         ],
-        title: Text("X RPL 1"),
+        title: Text("X SIJA"),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -42,31 +42,9 @@ class _RahmanXrplState extends State<RahmanXrpl> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Image.asset("assets/images/img.png"),
+                    Image.asset("assets/images/img_8.png"),
                     SizedBox(width: 13),
-                    Text('X RPL 1 '),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {},
-              child: Container(
-                padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                height: 80,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(color: Colors.grey),
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Image.asset("assets/images/img.png"),
-                    SizedBox(width: 13),
-                    Text('X RPL 2 '),
+                    Text('X SIJA '),
                   ],
                 ),
               ),
