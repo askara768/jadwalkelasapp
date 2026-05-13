@@ -29,7 +29,7 @@ class _RahmanLoginScreenState extends State<RahmanLoginScreen> {
           children: [
             Column(
               children: [
-                Text('Jadwal Kelas', style: TextStyle(fontSize: 50)),
+                Text('LockApp', style: TextStyle(fontSize: 50)),
                 Text('Login', style: TextStyle(fontSize: 30)),
                 SizedBox(height: 50),
                 TextField(
@@ -99,7 +99,7 @@ class _RahmanLoginScreenState extends State<RahmanLoginScreen> {
                   },
                   child: Text(
                     'Daftar',
-                    style: TextStyle(fontSize: 25, color: Colors.white),
+                    style: TextStyle(fontSize: 50, color: Colors.white),
                   ),
                 ),
                 ElevatedButton(
@@ -127,7 +127,7 @@ class _RahmanLoginScreenState extends State<RahmanLoginScreen> {
                   },
                   child: Text(
                     'Login',
-                    style: TextStyle(fontSize: 25, color: Colors.white),
+                    style: TextStyle(fontSize: 50, color: Colors.white),
                   ),
                 ),
               ],

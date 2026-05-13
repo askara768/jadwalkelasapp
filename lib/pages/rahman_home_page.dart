@@ -10,22 +10,167 @@ class RahmanHomePage extends StatefulWidget {
 class _RahmanHomePageState extends State<RahmanHomePage> {
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         actions: [
-          Row(
-            children: [
-              ElevatedButton(
-                onPressed: () => context,
-                child: Image.asset(
-                  "assets/images/kitsune.jpg",
-                  fit: BoxFit.fill,
-                ),
+          Card(
+            margin: EdgeInsets.all(0),
+            color: Colors.white,
+            child: Text(
+              "Andika Rahman Bagaskara",
+              style: TextStyle(color: Colors.black87, fontSize: 25),
+            ),
+          ),
+        ],
+        title: Text("X RPL 1"),
+      ),
+      body: Column(
+        children: [
+          ElevatedButton(
+            onPressed: () {},
+            child: Container(
+              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+              height: 80,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(5),
               ),
-            ],
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Image.asset(""),
+                  SizedBox(width: 13),
+                  Text('X RPL 2'),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(height: 20,),
+          ElevatedButton(
+            onPressed: () {},
+            child: Container(
+              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+              height: 80,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Image.asset(""),
+                  SizedBox(width: 13),
+                  Text('X RPL 2'),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(height: 20,),
+          ElevatedButton(
+            onPressed: () {},
+            child: Container(
+              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+              height: 80,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Image.asset(""),
+                  SizedBox(width: 13),
+                  Text('X RPL 2'),
+                ],
+              ),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            child: Container(
+              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+              height: 80,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Image.asset(""),
+                  SizedBox(width: 13),
+                  Text('X RPL 2'),
+                ],
+              ),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            child: Container(
+              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+              height: 80,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Image.asset(""),
+                  SizedBox(width: 13),
+                  Text('X RPL 2'),
+                ],
+              ),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            child: Container(
+              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+              height: 80,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Image.asset(""),
+                  SizedBox(width: 13),
+                  Text('X RPL 2'),
+                ],
+              ),
+            ),
           ),
         ],
       ),
+
+      // Container(
+      //   width: size.width,
+      //   height: size.height,
+      //   decoration: BoxDecoration(
+      //     gradient: LinearGradient(colors: [Colors.blueGrey, Colors.blueAccent]),
+      //   ),child: Column(children: [
+      //     ElevatedButton(onPressed: () {}, child: Column(children: [
+      //       Row(mainAxisAlignment: MainAxisAlignment.start,children: [
+      //
+      //       ],)
+      //     ],))
+      // ],),
+      // ),
     );
   }
 }
