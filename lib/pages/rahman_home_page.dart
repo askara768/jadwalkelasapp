@@ -12,19 +12,19 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "Nickname",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
+        actions: [
+          Row(
+            children: [
+              ElevatedButton(
+                onPressed: () => context,
+                child: Image.asset(
+                  "assets/images/kitsune.jpg",
+                  fit: BoxFit.fill,
+                ),
               ),
-            ),
-          ],
-        ),
+            ],
+          ),
+        ],
       ),
     );
   }
