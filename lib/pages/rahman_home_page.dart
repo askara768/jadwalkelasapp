@@ -113,6 +113,7 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
               ),
             ),
           ),
+          SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {},
             child: Container(
@@ -134,6 +135,7 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
               ),
             ),
           ),
+          SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {},
             child: Container(
