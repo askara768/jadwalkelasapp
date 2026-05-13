@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jadwalkelasapp/pages/lovely_profile_page.dart';
 import 'package:jadwalkelasapp/pages/lovely_xdkv.dart';
 import 'package:jadwalkelasapp/pages/lovely_xkpr.dart';
 import 'package:jadwalkelasapp/pages/lovely_xtsm.dart';
@@ -21,6 +22,13 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
     var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
+        leading: GestureDetector(
+          child: Image.asset("assets/images/kitsune.jpg"),
+          onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => LovelyProfilePage()),
+          ),
+        ),
         actions: [
           Card(
             margin: EdgeInsets.all(0),

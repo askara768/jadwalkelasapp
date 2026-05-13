@@ -109,7 +109,7 @@ class _RahmanLoginScreenState extends State<RahmanLoginScreen> {
                   onPressed: () {
                     if (_username.text == _loggedUsername.text &&
                         _password.text == _loggedPassword.text) {
-                      Navigator.push(
+                      Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
                           builder: (context) => RahmanHomePage(),
