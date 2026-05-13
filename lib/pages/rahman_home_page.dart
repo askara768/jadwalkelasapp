@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:jadwalkelasapp/pages/lovely_profile_page.dart';
+import 'package:jadwalkelasapp/pages/rahman_xrpl.dart';
+import 'package:jadwalkelasapp/pages/rahman_xtkj.dart';
+import 'package:jadwalkelasapp/pages/rahman_xtkr.dart';
+import 'package:jadwalkelasapp/rahman_dpib.dart';
+import 'package:jadwalkelasapp/rahman_sija.dart';
 
 class RahmanHomePage extends StatefulWidget {
   const RahmanHomePage({super.key});
@@ -13,24 +19,32 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
     var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        actions: [
-          Card(
-            margin: EdgeInsets.all(0),
-            color: Colors.white,
-            child: Text(
-              "Andika Rahman Bagaskara",
-              style: TextStyle(color: Colors.black87, fontSize: 25),
-            ),
+        backgroundColor: Colors.blueGrey,
+        leading: ElevatedButton(
+          onPressed: () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => LovelyProfilePage()),
           ),
-        ],
-        title: Text("X RPL 1"),
+          child: Image.asset("assets/images/kitsune.jpg", fit: BoxFit.fill),
+        ),
+        title: Column(
+          children: [
+            Text("Andika Rahman B."),
+            Text("X RPL 1", style: TextStyle(fontSize: 20)),
+          ],
+        ),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RahmanXtkr()),
+                );
+              },
               child: Container(
                 padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
                 height: 80,
@@ -52,7 +66,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RahmanXrpl()),
+                );
+              },
               child: Container(
                 padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
                 height: 80,
@@ -74,7 +93,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RahmanXtkj()),
+                );
+              },
               child: Container(
                 padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
                 height: 80,
@@ -184,7 +208,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RahmanSija()),
+                );
+              },
               child: Container(
                 padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
                 height: 80,
@@ -206,7 +235,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RahmanDpib()),
+                );
+              },
               child: Container(
                 padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
                 height: 80,
