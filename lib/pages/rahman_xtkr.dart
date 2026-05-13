@@ -17,12 +17,12 @@ class _RahmanXtkrState extends State<RahmanXtkr> {
             margin: EdgeInsets.all(0),
             color: Colors.white,
             child: Text(
-              "Andika Rahman Bagaskara",
+              "Jadwal Kelas",
               style: TextStyle(color: Colors.black87, fontSize: 25),
             ),
           ),
         ],
-        title: Text("X RPL 1"),
+        title: Text("X TKR"),
       ),
       body: SingleChildScrollView(
         child: Column(
