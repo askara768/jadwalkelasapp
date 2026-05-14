@@ -144,7 +144,7 @@ class _LovelyRegisterScreenState extends State<LovelyRegisterScreen> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => RahmanLoginScreen(),
+                        builder: (context) => LoginPage(),
                       ),
                     );
                   },

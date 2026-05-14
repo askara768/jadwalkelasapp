@@ -10,114 +10,117 @@ class LovelyXkpr extends StatefulWidget {
 class _LovelyXkprState extends State<LovelyXkpr> {
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         actions: [
-          Card(
-            margin: EdgeInsets.all(0),
-            color: Colors.white,
-            child: Text(
-              "Andika Rahman Bagaskara",
-              style: TextStyle(color: Colors.black87, fontSize: 25),
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "X KPR",
+                style: TextStyle(color: Colors.black87, fontSize: 25),
+              ),
+            ],
           ),
         ],
-        title: Text("X KPR"),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {},
-              child: Container(
-                padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                height: 80,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(color: Colors.grey),
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Image.asset("assets/images/img_4.png"),
-                    SizedBox(width: 13),
-                    Text('X KPR 1'),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {},
-              child: Container(
-                padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                height: 80,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(color: Colors.grey),
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Image.asset("assets/images/img_4.png"),
-                    SizedBox(width: 13),
-                    Text('X KPR 2'),
-                  ],
+      body: Container(height: size.height,width: size.width,decoration: BoxDecoration(gradient: SweepGradient(colors: [Colors.grey,Colors.black]))
+        ,child: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {},
+                child: Container(
+                  padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+                  height: 80,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Colors.grey),
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset("assets/images/img_4.png"),
+                      SizedBox(width: 13),
+                      Text('X KPR 1'),
+                    ],
+                  ),
                 ),
               ),
-            ),
-
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {},
-              child: Container(
-                padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                height: 80,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(color: Colors.grey),
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Image.asset("assets/images/img_4.png"),
-                    SizedBox(width: 13),
-                    Text('X KPR 3'),
-                  ],
-                ),
-              ),
-            ),
-
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {},
-              child: Container(
-                padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                height: 80,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(color: Colors.grey),
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Image.asset("assets/images/img_4.png"),
-                    SizedBox(width: 13),
-                    Text('X KPR 4'),
-                  ],
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {},
+                child: Container(
+                  padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+                  height: 80,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Colors.grey),
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset("assets/images/img_4.png"),
+                      SizedBox(width: 13),
+                      Text('X KPR 2'),
+                    ],
+                  ),
                 ),
               ),
-            ),
-          ],
+        
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {},
+                child: Container(
+                  padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+                  height: 80,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Colors.grey),
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset("assets/images/img_4.png"),
+                      SizedBox(width: 13),
+                      Text('X KPR 3'),
+                    ],
+                  ),
+                ),
+              ),
+        
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {},
+                child: Container(
+                  padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+                  height: 80,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Colors.grey),
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset("assets/images/img_4.png"),
+                      SizedBox(width: 13),
+                      Text('X KPR 4'),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

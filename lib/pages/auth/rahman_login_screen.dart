@@ -14,9 +14,7 @@ class _RahmanLoginScreenState extends State<RahmanLoginScreen> {
   TextEditingController _username = TextEditingController();
   TextEditingController _password = TextEditingController();
   TextEditingController _loggedUsername = TextEditingController(text: 'Adada');
-  final TextEditingController _loggedPassword = TextEditingController(
-    text: 'ikann',
-  );
+  TextEditingController _loggedPassword = TextEditingController(text: 'ikann');
   bool showPW = true;
   @override
   Widget build(BuildContext context) {

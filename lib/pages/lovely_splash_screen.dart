@@ -20,7 +20,7 @@ class _LovelySplashScreenState extends State<LovelySplashScreen> {
       const Duration(seconds: 5),
       (timer) => Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => RahmanLoginScreen()),
+        MaterialPageRoute(builder: (context) => LoginPage()),
       ),
     );
     super.initState();

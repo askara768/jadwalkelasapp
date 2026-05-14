@@ -6,7 +6,6 @@ import 'package:jadwalkelasapp/pages/lovely_xtsm.dart';
 import 'package:jadwalkelasapp/pages/rahman_xrpl.dart';
 import 'package:jadwalkelasapp/pages/rahman_xtkj.dart';
 import 'package:jadwalkelasapp/pages/rahman_xtkr.dart';
-import 'package:jadwalkelasapp/rahman_anm.dart';
 import 'package:jadwalkelasapp/rahman_dpib.dart';
 import 'package:jadwalkelasapp/rahman_sija.dart';
 
@@ -182,12 +181,7 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => RahmanAnm()),
-                );
-              },
+              onPressed: () {},
               child: Container(
                 padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
                 height: 80,
