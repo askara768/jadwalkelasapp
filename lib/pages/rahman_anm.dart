@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class RahmanXrpl extends StatefulWidget {
-  const RahmanXrpl({super.key});
+class RahmanAnm extends StatefulWidget {
+  const RahmanAnm({super.key});
 
   @override
-  State<RahmanXrpl> createState() => _RahmanXrplState();
+  State<RahmanAnm> createState() => _RahmanAnmState();
 }
 
-class _RahmanXrplState extends State<RahmanXrpl> {
+class _RahmanAnmState extends State<RahmanAnm> {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -18,7 +18,7 @@ class _RahmanXrplState extends State<RahmanXrpl> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "X RPL",
+                "X ANM",
                 style: TextStyle(color: Colors.black87, fontSize: 25),
               ),
             ],
@@ -29,7 +29,7 @@ class _RahmanXrplState extends State<RahmanXrpl> {
         height: size.height,
         width: size.width,
         decoration: BoxDecoration(
-          gradient: RadialGradient(colors: [Colors.black87, Colors.grey]),
+          gradient: SweepGradient(colors: [Colors.black87, Colors.grey]),
         ),
         child: SingleChildScrollView(
           child: Column(
@@ -49,9 +49,9 @@ class _RahmanXrplState extends State<RahmanXrpl> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Image.asset("assets/images/img.png"),
+                      Image.asset("assets/images/img_5.png"),
                       SizedBox(width: 13),
-                      Text('X RPL 1'),
+                      Text('X ANM 1'),
                     ],
                   ),
                 ),
@@ -71,9 +71,9 @@ class _RahmanXrplState extends State<RahmanXrpl> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Image.asset("assets/images/img.png"),
+                      Image.asset("assets/images/img_5.png"),
                       SizedBox(width: 13),
-                      Text('X RPL 2 '),
+                      Text('X ANM 2 '),
                     ],
                   ),
                 ),

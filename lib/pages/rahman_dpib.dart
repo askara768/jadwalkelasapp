@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class LovelyXtsm extends StatefulWidget {
-  const LovelyXtsm({super.key});
+class RahmanDpib extends StatefulWidget {
+  const RahmanDpib({super.key});
 
   @override
-  State<LovelyXtsm> createState() => _LovelyXtsmState();
+  State<RahmanDpib> createState() => _RahmanDpibState();
 }
 
-class _LovelyXtsmState extends State<LovelyXtsm> {
+class _RahmanDpibState extends State<RahmanDpib> {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -18,7 +18,7 @@ class _LovelyXtsmState extends State<LovelyXtsm> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "X TSM",
+                  "X DPIB",
                   style: TextStyle(color: Colors.black87, fontSize: 25),
                 ),
               ],
@@ -49,35 +49,13 @@ class _LovelyXtsmState extends State<LovelyXtsm> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Image.asset("assets/images/img_3.png"),
+                        Image.asset("assets/images/img_9.png"),
                         SizedBox(width: 13),
-                        Text('X TSM 1'),
+                        Text('X DPIB'),
                       ],
                     ),
                   ),
                 ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {},
-              child: Container(
-                padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                height: 80,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(color: Colors.grey),
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Image.asset("assets/images/img_3.png"),
-                    SizedBox(width: 13),
-                    Text('X TSM 2'),
-                  ],
-                ),
-              ),
-            ),
           ],
         ),
       ),

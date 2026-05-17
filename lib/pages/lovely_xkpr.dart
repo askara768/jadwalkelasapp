@@ -25,8 +25,13 @@ class _LovelyXkprState extends State<LovelyXkpr> {
           ),
         ],
       ),
-      body: Container(height: size.height,width: size.width,decoration: BoxDecoration(gradient: SweepGradient(colors: [Colors.grey,Colors.black]))
-        ,child: SingleChildScrollView(
+      body: Container(
+        height: size.height,
+        width: size.width,
+        decoration: BoxDecoration(
+          gradient: SweepGradient(colors: [Colors.black87, Colors.grey]),
+        ),
+        child: SingleChildScrollView(
           child: Column(
             children: [
               SizedBox(height: 20),
@@ -73,7 +78,7 @@ class _LovelyXkprState extends State<LovelyXkpr> {
                   ),
                 ),
               ),
-        
+
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {},
@@ -96,7 +101,7 @@ class _LovelyXkprState extends State<LovelyXkpr> {
                   ),
                 ),
               ),
-        
+
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {},

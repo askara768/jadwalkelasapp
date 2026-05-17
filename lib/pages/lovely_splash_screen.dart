@@ -20,7 +20,7 @@ class _LovelySplashScreenState extends State<LovelySplashScreen> {
       const Duration(seconds: 5),
       (timer) => Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => LoginPage()),
+        MaterialPageRoute(builder: (context) => RahmanLoginScreen()),
       ),
     );
     super.initState();
@@ -39,7 +39,7 @@ class _LovelySplashScreenState extends State<LovelySplashScreen> {
         width: double.infinity,
         height: double.infinity,
         decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage("")),
+          gradient: SweepGradient(colors: [Colors.black87, Colors.grey]),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
