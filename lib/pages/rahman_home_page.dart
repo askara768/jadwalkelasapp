@@ -29,7 +29,7 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
           ),
         ),
         leading: GestureDetector(
-          child: ClipOval(child: Image.asset("assets/images/img_6.png")),
+          child: ClipOval(child: Image.asset("assets/images/")),
           onTap: () => Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => LovelyProfilePage()),
@@ -50,7 +50,6 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
         decoration: BoxDecoration(
           gradient: SweepGradient(colors: [Colors.black87, Colors.grey]),
         ),
-
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
