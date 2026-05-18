@@ -10,8 +10,6 @@ class LovelyProfilePage extends StatefulWidget {
 class _LovelyProfilePageState extends State<LovelyProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Profile"),),
-    );
+    return Scaffold(appBar: AppBar());
   }
 }
