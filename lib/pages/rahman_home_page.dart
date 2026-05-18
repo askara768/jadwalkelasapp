@@ -4,11 +4,11 @@ import 'package:jadwalkelasapp/pages/lovely_xdkv.dart';
 import 'package:jadwalkelasapp/pages/lovely_xkpr.dart';
 import 'package:jadwalkelasapp/pages/lovely_xtsm.dart';
 import 'package:jadwalkelasapp/pages/rahman_anm.dart';
+import 'package:jadwalkelasapp/pages/rahman_dpib.dart';
+import 'package:jadwalkelasapp/pages/rahman_sija.dart';
 import 'package:jadwalkelasapp/pages/rahman_xrpl.dart';
 import 'package:jadwalkelasapp/pages/rahman_xtkj.dart';
 import 'package:jadwalkelasapp/pages/rahman_xtkr.dart';
-import 'package:jadwalkelasapp/pages/rahman_dpib.dart';
-import 'package:jadwalkelasapp/pages/rahman_sija.dart';
 
 class RahmanHomePage extends StatefulWidget {
   const RahmanHomePage({super.key});
@@ -57,6 +57,7 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
+              Text("JADWAL"),
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
