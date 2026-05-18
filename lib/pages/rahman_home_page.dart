@@ -29,25 +29,13 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
           ),
         ),
         leading: GestureDetector(
-          child: Image.asset("assets/images/kitsune.jpg"),
+          child: ClipOval(child: Image.asset("assets/images/kitsune.jpg",)),
           onTap: () => Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => LovelyProfilePage()),
           ),
         ),
-        actions: [
-          Card(
-            margin: EdgeInsets.all(0),
-            color: Colors.black,
-            child: Text(
-              "pelyuu",
-              style: TextStyle(color: Colors.white, fontSize: 25),
-            ),
-          ),
-        ],
-        title: Row(
-          children: [Text("X RPL 1", style: TextStyle(color: Colors.white))],
-        ),
+        title: Column(children: [Text("X RPL 1",style: TextStyle(color: Colors.white,fontSize: 20),), Text("pelyuu",style: TextStyle(color: Colors.white,fontSize: 10),)]),
       ),
       body: Container(
         decoration: BoxDecoration(
