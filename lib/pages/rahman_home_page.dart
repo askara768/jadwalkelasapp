@@ -29,35 +29,35 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
           ),
         ),
         leading: GestureDetector(
-          child: ClipOval(child: Image.asset("assets/images/")),
+          child: Image.asset("assets/images/kitsune.jpg"),
           onTap: () => Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => LovelyProfilePage()),
           ),
         ),
-        title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text("pelyuu", style: TextStyle(color: Colors.white, fontSize: 25)),
-            Text(
-              "X RPL 1",
-              style: TextStyle(color: Colors.white, fontSize: 15),
+        actions: [
+          Card(
+            margin: EdgeInsets.all(0),
+            color: Colors.black,
+            child: Text(
+              "pelyuu",
+              style: TextStyle(color: Colors.white, fontSize: 25),
             ),
-          ],
+          ),
+        ],
+        title: Row(
+          children: [Text("X RPL 1", style: TextStyle(color: Colors.white))],
         ),
       ),
       body: Container(
         decoration: BoxDecoration(
           gradient: SweepGradient(colors: [Colors.black87, Colors.grey]),
         ),
+
         child: SingleChildScrollView(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                "JADWAL KELAS X",
-                style: TextStyle(color: Colors.white, fontSize: 20),
-              ),
+              Text("JADWAL"),
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
