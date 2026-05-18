@@ -29,24 +29,21 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
           ),
         ),
         leading: GestureDetector(
-          child: Image.asset("assets/images/kitsune.jpg"),
+          child: ClipOval(child: Image.asset("assets/images/img_6.png")),
           onTap: () => Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => LovelyProfilePage()),
           ),
         ),
-        actions: [
-          Card(
-            margin: EdgeInsets.all(0),
-            color: Colors.black,
-            child: Text(
-              "pelyuu",
-              style: TextStyle(color: Colors.white, fontSize: 25),
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("pelyuu", style: TextStyle(color: Colors.white, fontSize: 25)),
+            Text(
+              "X RPL 1",
+              style: TextStyle(color: Colors.white, fontSize: 15),
             ),
-          ),
-        ],
-        title: Row(
-          children: [Text("X RPL 1", style: TextStyle(color: Colors.white))],
+          ],
         ),
       ),
       body: Container(
@@ -56,8 +53,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
 
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("JADWAL"),
+              Text(
+                "JADWAL KELAS X",
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
