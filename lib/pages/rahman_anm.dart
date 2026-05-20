@@ -29,7 +29,8 @@ class _RahmanAnmState extends State<RahmanAnm> {
         height: size.height,
         width: size.width,
         decoration: BoxDecoration(
-          gradient: SweepGradient(colors: [Colors.black87, Colors.grey]),
+          gradient: SweepGradient(colors: [Colors.black87, Colors.grey
+          ]),
         ),
         child: SingleChildScrollView(
           child: Column(
