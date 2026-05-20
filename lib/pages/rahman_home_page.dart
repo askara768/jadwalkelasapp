@@ -29,7 +29,7 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
           ),
         ),
         leading: GestureDetector(
-          child: ClipOval(child: Image.asset("assets/images/")),
+          child: ClipOval(child: Image.asset("assets/images/kitsune.jpg")),
           onTap: () => Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => LovelyProfilePage()),
@@ -38,7 +38,7 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("pelyuu", style: TextStyle(color: Colors.white, fontSize: 25)),
+            Text("velyuu", style: TextStyle(color: Colors.white, fontSize: 25)),
             Text(
               "X RPL 1",
               style: TextStyle(color: Colors.white, fontSize: 15),

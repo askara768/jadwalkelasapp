@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:jadwalkelasapp/pages/rahman_home_page.dart';
 
@@ -41,7 +40,8 @@ class _RahmanLoginScreenState extends State<RahmanLoginScreen> {
       body: Container(
         height: size.height,
         width: size.width,
-        decoration: BoxDecoration(gradient: SweepGradient(colors: [Colors.black87,Colors.grey])
+        decoration: BoxDecoration(
+          gradient: SweepGradient(colors: [Colors.black87, Colors.grey]),
         ),
         padding: EdgeInsets.all(20),
         child: Center(
@@ -104,7 +104,7 @@ class _RahmanLoginScreenState extends State<RahmanLoginScreen> {
                         ),
                       ],
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(height: 10),
                     TextField(
                       controller: _password,
                       keyboardType: TextInputType.text,
@@ -128,27 +128,50 @@ class _RahmanLoginScreenState extends State<RahmanLoginScreen> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 10,),
-                    Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [ElevatedButton(
-                        style: ButtonStyle(fixedSize: WidgetStatePropertyAll(Size(200, 1),),backgroundColor: WidgetStatePropertyAll( Colors.redAccent,)),
-                        onPressed: () {
-                          setState(() {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => LovelyRegisterScreen(),));
-                          });
-                        },
-                        child: Text(
-                          "Daftar",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ),
-                        SizedBox(height: 10,),
+                    SizedBox(height: 10),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
                         ElevatedButton(
-                          style: ButtonStyle(fixedSize: WidgetStatePropertyAll(Size(200, 1),),backgroundColor: WidgetStatePropertyAll( Colors.blueAccent,)),
+                          style: ButtonStyle(
+                            fixedSize: WidgetStatePropertyAll(Size(200, 1)),
+                            backgroundColor: WidgetStatePropertyAll(
+                              Colors.redAccent,
+                            ),
+                          ),
                           onPressed: () {
                             setState(() {
-                              if (_username.text == "pelyuu" && _password.text == "vely") {
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => RahmanHomePage(),));
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => LovelyRegisterScreen(),
+                                ),
+                              );
+                            });
+                          },
+                          child: Text(
+                            "Daftar",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        ElevatedButton(
+                          style: ButtonStyle(
+                            fixedSize: WidgetStatePropertyAll(Size(200, 1)),
+                            backgroundColor: WidgetStatePropertyAll(
+                              Colors.blueAccent,
+                            ),
+                          ),
+                          onPressed: () {
+                            setState(() {
+                              if (_username.text == "velyuu" &&
+                                  _password.text == "vely") {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => RahmanHomePage(),
+                                  ),
+                                );
                                 showDialog(
                                   context: context,
                                   builder: (context) =>
@@ -168,7 +191,6 @@ class _RahmanLoginScreenState extends State<RahmanLoginScreen> {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
-
                       ],
                     ),
                   ],

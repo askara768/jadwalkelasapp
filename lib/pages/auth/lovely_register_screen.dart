@@ -216,7 +216,7 @@ class _LovelyRegisterScreenState extends State<LovelyRegisterScreen> {
                           ),
                           onPressed: () {
                             setState(() {
-                              if (_password.text == "pelyuu" &&
+                              if (_password.text == "velyuu" &&
                                   _confrimPassword.text == "vely") {
                                 Navigator.push(
                                   context,
