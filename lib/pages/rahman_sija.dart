@@ -51,7 +51,7 @@ class _RahmanSijaState extends State<RahmanSija> {
                       children: [
                         Image.asset("assets/images/img_8.png"),
                         SizedBox(width: 13),
-                        Text('X SIJA'),
+                        Text('X  '),
                       ],
                     ),
                   ),
