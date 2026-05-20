@@ -101,7 +101,7 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Image.asset("assets/images/img.png"),
+                      Image.asset("assets/images/img.png", fit: BoxFit.cover),
                       SizedBox(width: 13),
                       Text('X RPL '),
                     ],
