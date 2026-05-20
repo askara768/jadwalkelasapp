@@ -1,6 +1,5 @@
-import 'dart:ui';
-
 class RahmanKelasModel {
+  final int id;
   final String clas;
   final String imgc;
   final String imgj;
@@ -8,29 +7,14 @@ class RahmanKelasModel {
     required this.clas,
     required this.imgc,
     required this.imgj,
+    required this.id,
   });
 }
 
-class Admin {
-  final List<RahmanKelasModel> tkr;
-  final List<RahmanKelasModel> rpl;
-  final List<RahmanKelasModel> tkj;
-  final List<RahmanKelasModel> tsm;
-  final List<RahmanKelasModel> kpr;
-  final List<RahmanKelasModel> dkv;
-  final List<RahmanKelasModel> anm;
-  final List<RahmanKelasModel> sija;
-  final List<RahmanKelasModel> dpib;
+class Blyadd {
+  final int ind;
+  final String namaJurusan;
+  final List<RahmanKelasModel> fill;
 
-  Admin({
-    required this.tkr,
-    required this.rpl,
-    required this.tkj,
-    required this.tsm,
-    required this.kpr,
-    required this.dkv,
-    required this.anm,
-    required this.sija,
-    required this.dpib,
-  });
+  Blyadd({required this.ind, required this.namaJurusan, required this.fill});
 }

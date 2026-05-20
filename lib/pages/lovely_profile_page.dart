@@ -9,7 +9,6 @@ class LovelyProfilePage extends StatefulWidget {
 }
 
 class _LovelyProfilePageState extends State<LovelyProfilePage> {
-
   String username = "velyuu";
   String id = "1320097";
   String email = "vely@gmail.com:";
@@ -26,11 +25,13 @@ class _LovelyProfilePageState extends State<LovelyProfilePage> {
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: IconButton(
-                  onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => RahmanHomePage(),));},
-                  icon: Icon(
-                    Icons.arrow_back,
-                    size: 35,
-                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RahmanHomePage()),
+                    );
+                  },
+                  icon: Icon(Icons.arrow_back, size: 35),
                 ),
               ),
             ),
@@ -48,8 +49,7 @@ class _LovelyProfilePageState extends State<LovelyProfilePage> {
                     SizedBox(height: 20),
                     CircleAvatar(
                       radius: 40,
-                      backgroundImage:
-                      AssetImage('assets/images/kitsune.jpg'),
+                      backgroundImage: AssetImage('assets/images/kitsune.jpg'),
                     ),
                     SizedBox(height: 40),
                     buildBox(username),

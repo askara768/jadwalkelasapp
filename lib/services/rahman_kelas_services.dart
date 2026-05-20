@@ -1,17 +1,14 @@
 import 'package:jadwalkelasapp/models/rahman_kelas_model.dart';
 
-List<Admin> blyaadd = [
-  Admin(
-    tkr: [
-      RahmanKelasModel(clas: "X RPL", imgc: "assets/images/img.png", imgj: ""),
+List<Blyadd> clase = [
+  Blyadd(
+    ind: 0,
+    namaJurusan: "TKR",
+    fill: [
+      RahmanKelasModel(clas: "X TKR 1", imgc: "", imgj: "", id: 0),
+      RahmanKelasModel(clas: "X TKR 2", imgc: "", imgj: "", id: 0),
+      RahmanKelasModel(clas: "X TKR 3", imgc: "", imgj: "", id: 0),
+      RahmanKelasModel(clas: "X TKR 4", imgc: "", imgj: "", id: 0),
     ],
-    rpl: [RahmanKelasModel(clas: "", imgc: "imgc", imgj: "imgj")],
-    tkj: [RahmanKelasModel(clas: "clas", imgc: "imgc", imgj: "imgj")],
-    tsm: [RahmanKelasModel(clas: "clas", imgc: "imgc", imgj: "imgj")],
-    kpr: [RahmanKelasModel(clas: "clas", imgc: "imgc", imgj: "imgj")],
-    dkv: [RahmanKelasModel(clas: "clas", imgc: "imgc", imgj: "imgj")],
-    anm: [RahmanKelasModel(clas: "clas", imgc: "imgc", imgj: "imgj")],
-    sija: [RahmanKelasModel(clas: "clas", imgc: "imgc", imgj: "imgj")],
-    dpib: [RahmanKelasModel(clas: "clas", imgc: "imgc", imgj: "imgj ")],
   ),
 ];
