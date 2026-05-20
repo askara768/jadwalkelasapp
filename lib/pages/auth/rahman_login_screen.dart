@@ -147,7 +147,7 @@ class _RahmanLoginScreenState extends State<RahmanLoginScreen> {
                           style: ButtonStyle(fixedSize: WidgetStatePropertyAll(Size(200, 1),),backgroundColor: WidgetStatePropertyAll( Colors.blueAccent,)),
                           onPressed: () {
                             setState(() {
-                              if (_username.text == "pelyuu" && _password.text == "vely") {
+                              if (_username.text == "velyuu" && _password.text == "vely") {
                                 Navigator.push(context, MaterialPageRoute(builder: (context) => RahmanHomePage(),));
                                 showDialog(
                                   context: context,
