@@ -37,11 +37,11 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
         ),
         title: Column(
           children: [
+            Text("Velyuu", style: TextStyle(color: Colors.white, fontSize: 20)),
             Text(
               "X RPL 1",
-              style: TextStyle(color: Colors.white, fontSize: 20),
+              style: TextStyle(color: Colors.white, fontSize: 10),
             ),
-            Text("velyuu", style: TextStyle(color: Colors.white, fontSize: 10)),
           ],
         ),
       ),
@@ -53,7 +53,7 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Text("JADWAL",),
+              Text("JADWAL"),
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
