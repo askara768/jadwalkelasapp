@@ -10,9 +10,9 @@ class LovelyProfilePage extends StatefulWidget {
 
 class _LovelyProfilePageState extends State<LovelyProfilePage> {
 
-  String username = "Username:";
-  String tanggalLahir = "Tanggal lahir:";
-  String email = "Email:";
+  String username = "velyuu";
+  String id = "1320097";
+  String email = "vely@gmail.com:";
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +54,7 @@ class _LovelyProfilePageState extends State<LovelyProfilePage> {
                     SizedBox(height: 40),
                     buildBox(username),
                     SizedBox(height: 25),
-                    buildBox(tanggalLahir),
+                    buildBox(id),
                     SizedBox(height: 25),
                     buildBox(email),
                   ],
