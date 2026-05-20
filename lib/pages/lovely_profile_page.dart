@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jadwalkelasapp/pages/rahman_home_page.dart';
 
 class LovelyProfilePage extends StatefulWidget {
   const LovelyProfilePage({super.key});
@@ -8,22 +9,84 @@ class LovelyProfilePage extends StatefulWidget {
 }
 
 class _LovelyProfilePageState extends State<LovelyProfilePage> {
+
+  String username = "Username:";
+  String tanggalLahir = "Tanggal lahir:";
+  String email = "Email:";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+      backgroundColor: Colors.white,
+      body: SafeArea(
+        child: Column(
           children: [
-            Text(
-              "PROFILE",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: IconButton(
+                  onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => RahmanHomePage(),));},
+                  icon: Icon(
+                    Icons.arrow_back,
+                    size: 35,
+                  ),
+                ),
+              ),
+            ),
+            Center(
+              child: Container(
+                width: 320,
+                height: 470,
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(30),
+                ),
+
+                child: Column(
+                  children: [
+                    SizedBox(height: 20),
+                    CircleAvatar(
+                      radius: 40,
+                      backgroundImage:
+                      AssetImage('assets/images/kitsune.jpg'),
+                    ),
+                    SizedBox(height: 40),
+                    buildBox(username),
+                    SizedBox(height: 25),
+                    buildBox(tanggalLahir),
+                    SizedBox(height: 25),
+                    buildBox(email),
+                  ],
+                ),
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget buildBox(String text) {
+    return Container(
+      width: 250,
+      height: 60,
+
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+
+      alignment: Alignment.centerLeft,
+
+      decoration: BoxDecoration(
+        color: Colors.grey[700],
+        borderRadius: BorderRadius.circular(30),
+      ),
+
+      child: Text(
+        text,
+        style: const TextStyle(
+          color: Colors.white,
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
         ),
       ),
     );

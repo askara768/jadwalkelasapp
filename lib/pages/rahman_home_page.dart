@@ -36,13 +36,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
           ),
         ),
         title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("velyuu", style: TextStyle(color: Colors.white, fontSize: 25)),
             Text(
               "X RPL 1",
-              style: TextStyle(color: Colors.white, fontSize: 15),
+              style: TextStyle(color: Colors.white, fontSize: 20),
             ),
+            Text("velyuu", style: TextStyle(color: Colors.white, fontSize: 10)),
           ],
         ),
       ),
@@ -50,14 +49,11 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
         decoration: BoxDecoration(
           gradient: SweepGradient(colors: [Colors.black87, Colors.grey]),
         ),
+
         child: SingleChildScrollView(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                "JADWAL KELAS X",
-                style: TextStyle(color: Colors.white, fontSize: 20),
-              ),
+              Text("JADWAL",),
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
