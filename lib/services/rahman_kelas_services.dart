@@ -52,3 +52,4 @@ List<Perclass> dpib = [
 ];
 List<Perclass> sija = [
   Perclass(id: 911, classJurusan: "X SIJA", imgj: "assets/images/sija.png"),];
+
