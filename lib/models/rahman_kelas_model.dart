@@ -1,20 +1,16 @@
+import 'package:flutter/cupertino.dart';
+
 class RahmanKelasModel {
-  final int id;
-  final String clas;
+  final String jurusan;
   final String imgc;
-  final String imgj;
-  RahmanKelasModel({
-    required this.clas,
-    required this.imgc,
-    required this.imgj,
-    required this.id,
-  });
+  final List<Perclass> cl;
+  RahmanKelasModel({required this.jurusan, required this.imgc, required this.cl});
 }
 
-class Blyadd {
-  final int ind;
-  final String namaJurusan;
-  final List<RahmanKelasModel> fill;
+class Perclass {
+  final int id;
+  final String classJurusan;
+  final String imgj;
 
-  Blyadd({required this.ind, required this.namaJurusan, required this.fill});
+  Perclass({required this.id, required this.classJurusan, required this.imgj});
 }
