@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jadwalkelasapp/pages/lovely_profile_page.dart';
-import 'package:jadwalkelasapp/pages/lovely_xdkv.dart';
-import 'package:jadwalkelasapp/pages/lovely_xkpr.dart';
-import 'package:jadwalkelasapp/pages/lovely_xtsm.dart';
-import 'package:jadwalkelasapp/pages/rahman_anm.dart';
-import 'package:jadwalkelasapp/pages/rahman_dpib.dart';
-import 'package:jadwalkelasapp/pages/rahman_sija.dart';
-import 'package:jadwalkelasapp/pages/rahman_xrpl.dart';
-import 'package:jadwalkelasapp/pages/rahman_xtkj.dart';
-import 'package:jadwalkelasapp/pages/rahman_xtkr.dart';
+import 'package:jadwalkelasapp/pages/rahman_jadwal.dart';
+import 'package:jadwalkelasapp/services/rahman_kelas_services.dart';
 
 class RahmanHomePage extends StatefulWidget {
   const RahmanHomePage({super.key});
@@ -18,6 +11,34 @@ class RahmanHomePage extends StatefulWidget {
 }
 
 class _RahmanHomePageState extends State<RahmanHomePage> {
+  //pop up class
+  void showKelasDialog(BuildContext context, int s) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text('Kelas ${jur[s].jurusan}'),
+        content: SizedBox(
+          width: double.maxFinite,
+          child: ListView.builder(
+            shrinkWrap: true,
+            itemCount: jur[s].cl.length,
+            itemBuilder: (context, i) {
+              return GestureDetector(
+                child: Text(jur[s].cl[i].classJurusan),
+                onTap: () => Navigator.push(context,MaterialPageRoute(builder: (context) => RahmanJadwal(id: jur[s].cl[i].id),)),
+              );
+            },
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text('Tutup'),
+          ),
+        ],
+      ),
+    );
+  }
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -55,266 +76,59 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
             children: [
               Text("JADWAL", style: TextStyle(color: Colors.white)),
               SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => RahmanXtkr()),
-                  );
-                },
-                child: Container(
-                  padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                  height: 80,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.grey),
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset("assets/images/img_2.png"),
-                      SizedBox(width: 13),
-                      Text('X TKR '),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => RahmanXrpl()),
-                  );
-                },
-                child: Container(
-                  padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                  height: 80,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.grey),
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset("assets/images/img.png", fit: BoxFit.cover),
-                      SizedBox(width: 13),
-                      Text('X RPL '),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => RahmanXtkj()),
-                  );
-                },
-                child: Container(
-                  padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                  height: 80,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.grey),
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset("assets/images/img_1.png"),
-                      SizedBox(width: 13),
-                      Text('X TKJ '),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => LovelyXtsm()),
-                  );
-                },
-                child: Container(
-                  padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                  height: 80,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.grey),
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset("assets/images/img_3.png"),
-                      SizedBox(width: 13),
-                      Text('X TSM '),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => LovelyXkpr()),
-                  );
-                },
-                child: Container(
-                  padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                  height: 80,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.grey),
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset("assets/images/img_4.png"),
-                      SizedBox(width: 13),
-                      Text('X KPR '),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => RahmanAnm()),
-                  );
-                },
-                child: Container(
-                  padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                  height: 80,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.grey),
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset("assets/images/img_5.png"),
-                      SizedBox(width: 13),
-                      Text('X ANM '),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => LovelyXdkv()),
-                  );
-                },
-                child: Container(
-                  padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                  height: 80,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.grey),
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset("assets/images/img_7.png"),
-                      SizedBox(width: 13),
-                      Text('X DKV '),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => RahmanSija()),
-                  );
-                },
-                child: Container(
-                  padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                  height: 80,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.grey),
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset("assets/images/img_8.png"),
-                      SizedBox(width: 13),
-                      Text('X SIJA '),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => RahmanDpib()),
-                  );
-                },
-                child: Container(
-                  padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                  height: 80,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.grey),
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset("assets/images/img_9.png"),
-                      SizedBox(width: 13),
-                      Text('X DPIB '),
-                    ],
-                  ),
+              Padding(
+                padding: EdgeInsets.all(10),
+                child: ListView.builder(
+                  physics: NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  itemCount: jur.length,
+                  itemBuilder: (context, s) {
+                    return GestureDetector(
+                      onTap: () => showKelasDialog(context, s),
+                      child: Container(
+                        margin: EdgeInsets.only(bottom: 12),
+                        width: size.width,
+                        height: 90,
+                        decoration: BoxDecoration(
+                          color: Colors.white12,
+                          borderRadius: BorderRadius.circular(20),
+                          border: Border.all(color: Colors.white24),
+                        ),
+                        child: Row(
+                          children: [
+                            SizedBox(width: 10),
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(12),
+                              child: Image.asset(
+                                jur[s].imgc,
+                                width: 60,
+                                height: 60,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            SizedBox(width: 15),
+                            Text(
+                              jur[s].jurusan,
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Spacer(),
+                            Icon(Icons.arrow_forward_ios, color: Colors.white54, size: 16),
+                            SizedBox(width: 10),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
                 ),
               ),
             ],
           ),
         ),
       ),
-
-      // Container(
-      //   width: size.width,
-      //   height: size.height,
-      //   decoration: BoxDecoration(
-      //     gradient: LinearGradient(colors: [Colors.blueGrey, Colors.blueAccent]),
-      //   ),child: Column(children: [
-      //     ElevatedButton(onPressed: () {}, child: Column(children: [
-      //       Row(mainAxisAlignment: MainAxisAlignment.start,children: [
-      //
-      //       ],)
-      //     ],))
-      // ],),
-      // ),
     );
   }
 }
