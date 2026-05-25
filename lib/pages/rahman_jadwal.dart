@@ -15,18 +15,31 @@ class _RahmanJadwalState extends State<RahmanJadwal> {
   late RahmanKelasModel cla;
   @override
   void initState() {
-    cla = jur.firstWhere((element) => element.cl == widget.id);
+    cla = jur.firstWhere((element) => element.cl[widget.id].id == widget.id);
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
-    var size= MediaQuery.of(context).size;
+    var size = MediaQuery.of(context).size;
     return Scaffold(
-        appBar: AppBar(
-          flexibleSpace: Container(
-            decoration: BoxDecoration(gradient: SweepGradient(colors: [Colors.black,Colors.black])),
+      appBar: AppBar(
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: SweepGradient(colors: [Colors.black, Colors.black]),
           ),
         ),
-        body: Center(child: ListView.builder(itemBuilder: (context, s) => Image.asset(cla.cl[s].imgj,fit: BoxFit.cover,width: size.width-30,height: size.height-40,),),),);
+      ),
+      body: Center(
+        child: ListView.builder(
+          itemBuilder: (context, s) => Image.asset(
+            cla.cl[s].imgj,
+            fit: BoxFit.cover,
+            width: 200,
+            height: 500,
+          ),
+        ),
+      ),
+    );
   }
 }

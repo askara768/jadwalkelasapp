@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jadwalkelasapp/pages/lovely_profile_page.dart';
 import 'package:jadwalkelasapp/pages/rahman_jadwal.dart';
-import 'package:jadwalkelasapp/pages/widgets/jad_widget.dart';
 import 'package:jadwalkelasapp/services/rahman_kelas_services.dart';
 
 class RahmanHomePage extends StatefulWidget {
