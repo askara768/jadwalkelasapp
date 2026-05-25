@@ -53,7 +53,7 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Text("JADWAL"),
+              Text("JADWAL", style: TextStyle(color: Colors.white)),
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
