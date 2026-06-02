@@ -49,7 +49,7 @@ class _LovelyProfilePageState extends State<LovelyProfilePage> {
                     SizedBox(height: 20),
                     CircleAvatar(
                       radius: 40,
-                      backgroundImage: AssetImage('assets/images/kitsune.jpg'),
+                      backgroundImage: AssetImage('assets/images/img_10.png'),
                     ),
                     SizedBox(height: 40),
                     buildBox(username),

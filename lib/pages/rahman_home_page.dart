@@ -25,7 +25,12 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
             itemBuilder: (context, i) {
               return GestureDetector(
                 child: Text(jur[s].cl[i].classJurusan),
-                onTap: () => Navigator.push(context,MaterialPageRoute(builder: (context) => RahmanJadwal(id: jur[s].cl[i].id),)),
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => RahmanJadwal(id: jur[s].cl[i].id),
+                  ),
+                ),
               );
             },
           ),
@@ -39,6 +44,7 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
       ),
     );
   }
+
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -50,7 +56,7 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
           ),
         ),
         leading: GestureDetector(
-          child: ClipOval(child: Image.asset("assets/images/kitsune.jpg")),
+          child: ClipOval(child: Image.asset("assets/images/img_10.png")),
           onTap: () => Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => LovelyProfilePage()),
@@ -116,7 +122,11 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
                               ),
                             ),
                             Spacer(),
-                            Icon(Icons.arrow_forward_ios, color: Colors.white54, size: 16),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.white54,
+                              size: 16,
+                            ),
                             SizedBox(width: 10),
                           ],
                         ),
