@@ -79,7 +79,9 @@ class _RahmanHomePageState extends State<RahmanHomePage> {
 
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              SizedBox(height: 10),
               Text("JADWAL", style: TextStyle(color: Colors.white)),
               SizedBox(height: 20),
               Padding(
