@@ -15,6 +15,7 @@ class _LovelyProfilePageState extends State<LovelyProfilePage> {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -57,6 +58,17 @@ class _LovelyProfilePageState extends State<LovelyProfilePage> {
                     buildBox(id),
                     SizedBox(height: 25),
                     buildBox(email),
+
+                    SizedBox(height: 20),
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ButtonStyle(
+                        minimumSize: WidgetStatePropertyAll(
+                          Size(size.width - 80, 50),
+                        ),
+                      ),
+                      child: Text("Sumbit"),
+                    ),
                   ],
                 ),
               ),
